@@ -26,9 +26,9 @@ const Options = [
 @connect(
   ({ sort }) => ({ sort }),
   (dispatch) => ({
-    changeSort: (sort) => {
-      dispatch(changeSort(sort));
-      dispatch(fetchPosts({ sort }));
+    changeSort: async (sort) => {
+      await dispatch(changeSort(sort));
+      await dispatch(fetchPosts({ sort }));
       return dispatch(recountVotes());
     },
   })
