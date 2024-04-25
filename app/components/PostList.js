@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 
@@ -26,7 +25,7 @@ import "./css/_PostList.css";
 export default class PostList extends Component {
   static propTypes = {
     loadPosts: PropTypes.func,
-    posts: PropTypes.object,
+    posts: PropTypes.array,
   };
 
   async componentDidMount() {
