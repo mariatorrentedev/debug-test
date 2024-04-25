@@ -63,7 +63,7 @@ For each of the following issues:
 **Customer 2:** When I click on "Top" or "Old", the selector does not update with my new selection.
 
 1. 2. In the original reducer `app/reducers/sort.js`, the state was being mutated directly when handling the `ChangeSort` action. This violates the principle of immutable state in Redux. I refactored it to ensure that the state mutations are avoid, returning a new state object with the updated `sort` value.
-   3. Hey, thanks for flagging that! Our posts sorting was a bit off-kilter behind the scenes, but we've straightened it out. We're here for you, so if anything else comes up, just give us a shout.
+   3. Hey, thanks for flagging that! Our posts sorting was a bit off-kilter behind the scenes, causing a wrong data displayed in the dropdown, but we've straightened it out. We're here for you, so if anything else comes up, just give us a shout.
 
 **Customer 3:** When I sort by "Top", there are posts with only 28 votes ranking higher than posts with 180 votes!
 
