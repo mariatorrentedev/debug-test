@@ -59,7 +59,7 @@ For each of the following issues:
 🪲**1.** The `SSToken` in `utils/AJAX.js` was corrupted, instead of using the key `name` in the parameters, there was a spelling issue as `nayme`;
 
 🛠️**2.** I used
-[jwt.io](https://jwt.io/) in order to fix it and grab the correct one. Note: minor warning related to the posts `propType` from `object` to `array` was done here.
+[jwt.io](https://jwt.io/) in order to fix it and grab the correct one. Note: minor warning related to the posts `propType` from `object` to `array` was fixed here.
 
 💬**3**. I apologize for the inconvenience, but great news! We've identified the issue – it was a small typo. Our team is currently addressing it, and we expect everything return to normal shortly. You don't need to take any action at this time, but please feel free to reach out if you have any other concerns or require further assistance. We're here to help!
 
@@ -73,7 +73,7 @@ For each of the following issues:
 
 **Customer 3:** When I sort by "Top", there are posts with only 28 votes ranking higher than posts with 180 votes!
 
-🪲**1** The original `sortBy` fn in `server/utils/sortBy.js` was doing the merging comparison by key incorrectly.
+🪲**1.** The original `sortBy` fn in `server/utils/sortBy.js` was doing the merging comparison by key incorrectly.
 
 🛠️**2.** We optimized it using the built-in `sort()` JavaScript method; using custom sorting algorithm based on recursion and merging, apart that is really hard to understand, it's not as efficient as the built-in option.
 
@@ -81,7 +81,7 @@ For each of the following issues:
 
 **Customer 4:** When I page through posts, although the posts are changing, the vote count in the top left corner does not match the total count of votes of the displayed posts.
 
-🪲**1** When dispatching actions in Redux, they are typically synchronous.
+🪲**1.** When dispatching actions in Redux, they are typically synchronous.
 
 🛠️**2.** By using `async/await` we ensure that each dispatched action is completed before proceesing to the next one. This sequential execution helps maintain the data fetching and state updates in the correct order. Note: this could also be solved by using promises directly.
 
