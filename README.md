@@ -56,6 +56,10 @@ For each of the following issues:
 
 **Customer 1:** When I open the application, my posts do not load and all I see is a 'server error'.
 
+1. 2. The `SSToken` in `utils/AJAX.js` was corrupted, instead of using the key `name` in the parameters, there was a spelling issue as `nayme`; I used
+      [jwt.io](https://jwt.io/) in order to fix it and grab the correct one.
+   3. I apologize for the inconvenience, but great news! We've identified the issue – it was a small typo. Our team is currently addressing it, and we expect everything return to normal shortly. You don't need to take any action at this time, but please feel free to reach out if you have any other concerns or require further assistance. We're here to help!
+
 **Customer 2:** When I click on "Top" or "Old", the selector does not update with my new selection.
 
 **Customer 3:** When I sort by "Top", there are posts with only 28 votes ranking higher than posts with 180 votes!

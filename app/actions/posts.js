@@ -27,7 +27,6 @@ export function recountVotes(posts, pages) {
 }
 
 export function fetchPosts(params) {
-  console.log(params, "Params");
   return async (dispatch, getState) => {
     const { error, pages, posts } = await get("/api/posts/get", params);
     if (error) {
