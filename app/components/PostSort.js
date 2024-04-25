@@ -27,7 +27,7 @@ const Options = [
   ({ sort }) => ({ sort }),
   (dispatch) => ({
     changeSort: async (sort) => {
-      await dispatch(changeSort(sort));
+      dispatch(changeSort(sort));
       await dispatch(fetchPosts({ sort }));
       return dispatch(recountVotes());
     },
