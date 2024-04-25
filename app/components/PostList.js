@@ -15,8 +15,8 @@ import "./css/_PostList.css";
     votes: posts.votes,
   }),
   (dispatch) => ({
-    fetchPosts: (params) => {
-      dispatch(fetchPosts(params));
+    fetchPosts: async (params) => {
+      await dispatch(fetchPosts(params));
       return dispatch(recountVotes());
     },
     loadPosts: () => dispatch(loadPosts()),
