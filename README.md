@@ -69,6 +69,12 @@ For each of the following issues:
 
 **Customer 3:** When I sort by "Top", there are posts with only 28 votes ranking higher than posts with 180 votes!
 
+**1** The original `sortBy` fn in `server/utils/sortBy.js` was doing the merging comparison by key incorrectly.
+
+**2.** We optimized it using the built-in `sort()` JavaScript method; using custom sorting algorithm based on recursion and merging, apart that is really hard to understand, it's not as efficient as the built-in option.
+
+**3.** Dear customer, we've identified and addressed the issue where the sorting order was not aligning correctly with the specified criteria, particularly when sorting posts by vote counts using the `Top` option in the dropdown. With this fix in place, you should notice that posts are now sorted accurately based on the specified criteria. We appreciate your patience, if you encountered any further issues, please don't hesitate and reach out.
+
 **Customer 4:** When I page through posts, although the posts are changing, the vote count in the top left corner does not match the total count of votes of the displayed posts.
 
 ## 🎉 You're Done 🎉
